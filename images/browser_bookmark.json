@@ -1,3 +1,7 @@
-{
-  "key":"value"
-}
+[
+  {"url": "https://cn.bing.com/", "title": "必应搜索"},
+  {"url": "https://www.smartedu.cn/", "title": "国家智慧教育公共服务平台"},
+  {"url": "https://alist.xiaoya.pro/", "title": "小雅Alist"},
+  {"url": "https://tuostudy.com/", "title": "图欧学习资源库"},
+  {"url": "https://tuostudy.upnb.top/", "title": "图欧学习导航"}
+]
