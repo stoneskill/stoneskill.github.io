@@ -1,50 +1,6 @@
-/* Original script for stoneskill.github.io. No libraries. */
+/* Original script for the stoneskill bookmark page. No libraries. */
 (function () {
   "use strict";
-
-  var yearEl = document.querySelector("[data-year]");
-  if (yearEl) {
-    yearEl.textContent = String(new Date().getFullYear());
-  }
-
-  var links = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
-
-  function setCurrent(id) {
-    links.forEach(function (link) {
-      if (link.getAttribute("href") === "#" + id) {
-        link.setAttribute("aria-current", "true");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    });
-  }
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function () {
-      var href = link.getAttribute("href") || "";
-      if (href.charAt(0) === "#") setCurrent(href.slice(1));
-    });
-  });
-
-  var sections = links
-    .map(function (link) {
-      return document.querySelector(link.getAttribute("href"));
-    })
-    .filter(Boolean);
-
-  if ("IntersectionObserver" in window && sections.length) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) setCurrent(entry.target.id);
-        });
-      },
-      { rootMargin: "-45% 0px -50% 0px", threshold: 0.01 }
-    );
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  }
 
   var list = document.getElementById("bookmark-list");
   var status = document.getElementById("bookmark-status");
@@ -64,7 +20,7 @@
     })
     .catch(function () {
       if (status) {
-        status.textContent = "当前显示页内写好的书签。JSON 文件在 jsons/browser_bookmark.json。";
+        status.textContent = "没读到 JSON，下面是页内的同一份书签。";
       }
     });
 
