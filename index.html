@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>李强强 · stoneskill</title>
+  <meta name="description" content="李强强（stoneskill），浏览器厂商工程师。从事 Chromium（MIPS64el / ARM64）与 Firefox（MIPS64 / 龙芯）移植。">
+  <meta name="author" content="李强强">
+  <meta name="theme-color" content="#f6f1e6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://stoneskill.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "李强强",
+    "alternateName": "stoneskill",
+    "url": "https://stoneskill.github.io/",
+    "jobTitle": "浏览器厂商工程师",
+    "sameAs": ["https://github.com/stoneskill"],
+    "description": "从事 Chromium（MIPS64el/ARM64）与 Firefox（MIPS64/龙芯）移植。"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="page">
+    <p class="running">
+      <span>stoneskill.github.io</span>
+      <span lang="en">Personal site</span>
+    </p>
+    <header class="mast">
+      <div class="mast-bar">
+        <a class="brand" href="#intro">李强强 <small>stoneskill</small></a>
+        <nav class="nav" aria-label="页内">
+          <a href="#intro" aria-current="true">简介</a>
+          <a href="#about">关于</a>
+          <a href="#work">工作</a>
+          <a href="#bookmarks">书签</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="intro">
+        <p class="eyebrow"><span lang="en">Browser ports</span> · 浏览器移植</p>
+        <div class="hero-head">
+          <div>
+            <h1>李强强</h1>
+            <p class="latin" lang="en">stoneskill</p>
+          </div>
+          <div class="chop" aria-hidden="true">强</div>
+        </div>
+        <p class="lede">浏览器厂商工程师。Chromium 移植看 MIPS64el 与 ARM64，Firefox 移植看 MIPS64 与龙芯。</p>
+        <p class="sub">公开的代码在 GitHub 仓库里。这个页面只做介绍和入口，不写未公开的细节。</p>
+        <ul class="arches">
+          <li><span>Chromium</span>MIPS64el</li>
+          <li><span>Chromium</span>ARM64</li>
+          <li><span>Firefox</span>MIPS64</li>
+          <li><span>Firefox</span>Loongson</li>
+        </ul>
+        <figure class="port-fig">
+          <svg class="port-map" viewBox="0 0 720 188" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.25">
+              <path d="M180 52 V86 H90 V132" />
+              <path d="M180 86 H270 V132" />
+              <path d="M540 52 V86 H450 V132" />
+              <path d="M540 86 H630 V132" />
+            </g>
+            <g class="joints" stroke="currentColor" stroke-width="1.25">
+              <circle cx="180" cy="52" r="4" />
+              <circle cx="540" cy="52" r="4" />
+              <circle cx="90" cy="132" r="4" />
+              <circle cx="270" cy="132" r="4" />
+              <circle cx="450" cy="132" r="4" />
+              <circle cx="630" cy="132" r="4" />
+            </g>
+            <g text-anchor="middle">
+              <text x="180" y="28">Chromium</text>
+              <text x="540" y="28">Firefox</text>
+              <text x="90" y="162">MIPS64el</text>
+              <text x="270" y="162">ARM64</text>
+              <text x="450" y="162">MIPS64</text>
+              <text x="630" y="162">Loongson</text>
+            </g>
+          </svg>
+          <figcaption>引擎与体系结构的对应关系。仓库链接在「工作」一节。</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="about">
+        <p class="section-label">02 / About</p>
+        <h2>关于</h2>
+        <div class="prose">
+          <p>我叫李强强，GitHub 上的用户名是 stoneskill。我在浏览器厂商做引擎移植：把 Chromium 和 Firefox 带到还需要它们的体系结构上，并让这些移植能跟着上游继续构建。</p>
+          <ul>
+            <li>Chromium 这一侧是 MIPS64el 与 ARM64。公开仓库 <a href="https://github.com/stoneskill/chromium">stoneskill/chromium</a> 的简介是 “The official GitHub mirror of the Chromium source”。</li>
+            <li>Firefox 这一侧是 MIPS64 与龙芯。公开仓库 <a href="https://github.com/stoneskill/firefox">stoneskill/firefox</a> 的简介是 “Firefox source tree for Loongson 3”。</li>
+          </ul>
+          <p>另外还有一份公开的 <a href="https://github.com/stoneskill/ungoogled-chromium">ungoogled-chromium</a> fork。其余仓库都在 <a rel="me" href="https://github.com/stoneskill">GitHub 主页</a>上，这里不逐个展开。账号从 2014 年放在 GitHub 上。</p>
+          <p class="en en-quote" lang="en">Browser vendor engineer. I work on the Chromium port for MIPS64el and ARM64, and the Firefox port for MIPS64 and Loongson.</p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <p class="section-label">03 / Work</p>
+        <h2>工作</h2>
+        <p class="sub">下面三份是与浏览器直接相关、已经公开的仓库。说明引自各仓库自己的简介。</p>
+        <ol class="works">
+          <li class="work">
+            <p class="work-arch">MIPS64el · ARM64</p>
+            <h3><a href="https://github.com/stoneskill/chromium">chromium</a></h3>
+            <p class="work-note">Chromium 源码的公开镜像。我在这条线上做 MIPS64el 与 ARM64 移植。<span lang="en">The official GitHub mirror of the Chromium source.</span></p>
+            <p class="work-go">github.com/stoneskill/chromium ↗</p>
+          </li>
+          <li class="work">
+            <p class="work-arch">MIPS64 · Loongson</p>
+            <h3><a href="https://github.com/stoneskill/firefox">firefox</a></h3>
+            <p class="work-note">面向龙芯 3 的 Firefox 源码树，对应 MIPS64 与龙芯移植。<span lang="en">Firefox source tree for Loongson 3.</span></p>
+            <p class="work-go">github.com/stoneskill/firefox ↗</p>
+          </li>
+          <li class="work">
+            <p class="work-arch">Chromium fork</p>
+            <h3><a href="https://github.com/stoneskill/ungoogled-chromium">ungoogled-chromium</a></h3>
+            <p class="work-note">另一份公开的 Chromium 相关仓库，去掉了 Google 集成。<span lang="en">Google Chromium, sans integration with Google.</span></p>
+            <p class="work-go">github.com/stoneskill/ungoogled-chromium ↗</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="bookmarks">
+        <p class="section-label">04 / Links</p>
+        <h2>书签</h2>
+        <p class="json-paths">
+          <a href="json/browser_bookmark.json">/json/browser_bookmark.json</a>
+          <a href="images/browser_bookmark.json">/images/browser_bookmark.json</a>
+        </p>
+        <p id="bookmark-status">下面这份列表与仓库里的两份书签 JSON 一致。</p>
+        <ol class="bm-list" id="bookmark-list">
+          <li>
+            <a href="https://cursor.com/agents" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">01</span>
+              <span class="bm-title">Cursor</span>
+              <span class="bm-url">https://cursor.com/agents</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://cn.bing.com/" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">02</span>
+              <span class="bm-title">必应搜索</span>
+              <span class="bm-url">https://cn.bing.com/</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.smartedu.cn/" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">03</span>
+              <span class="bm-title">国家智慧教育公共服务平台</span>
+              <span class="bm-url">https://www.smartedu.cn/</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://tuostudy.com/" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">04</span>
+              <span class="bm-title">图欧学习资源库</span>
+              <span class="bm-url">https://tuostudy.com/</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://tuostudy.upnb.top/" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">05</span>
+              <span class="bm-title">图欧学习导航</span>
+              <span class="bm-url">https://tuostudy.upnb.top/</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <span class="bm-idx">06</span>
+              <span class="bm-title">Github</span>
+              <span class="bm-url">https://github.com/</span>
+              <span class="vh">（在新窗口打开）</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="contact">
+        <p class="section-label">05 / Contact</p>
+        <h2>联系</h2>
+        <div class="prose">
+          <p>有仓库、构建或移植相关的事，请通过 GitHub 找我。本页不放邮箱，也不做联系表单。</p>
+          <p class="en" lang="en">Public contact is the GitHub profile. No private address is listed on this site.</p>
+        </div>
+        <a class="mail-block" rel="me" href="https://github.com/stoneskill">
+          <span class="mail-kicker">GitHub</span>
+          <span class="mail-addr">github.com/stoneskill</span>
+        </a>
+        <p class="site-url">本站 <a href="https://stoneskill.github.io/">https://stoneskill.github.io/</a></p>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <p>© <span data-year>2026</span> 李强强 · stoneskill</p>
+      <p>本页 HTML、CSS、JavaScript 为原创手写，没有使用第三方主题、模板或 UI 套件。字体使用访问者设备上的系统字体，没有嵌入字体文件，也没有使用受版权限制的图片。</p>
+      <p>
+        <a href="json/browser_bookmark.json">/json/browser_bookmark.json</a>
+        ·
+        <a href="images/browser_bookmark.json">/images/browser_bookmark.json</a>
+        ·
+        <a href="json/test.json">/json/test.json</a>
+      </p>
+    </footer>
+  </div>
+  <script src="js/site.js"></script>
+</body>
+</html>
