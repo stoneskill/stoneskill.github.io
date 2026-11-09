@@ -50,7 +50,7 @@
   var status = document.getElementById("bookmark-status");
   if (!list) return;
 
-  fetch("json/browser_bookmark.json", { cache: "no-store" })
+  fetch("jsons/browser_bookmark.json", { cache: "no-store" })
     .then(function (res) {
       if (!res.ok) throw new Error("HTTP " + res.status);
       return res.json();
@@ -59,15 +59,12 @@
       if (!Array.isArray(items)) throw new Error("bad json");
       renderBookmarks(list, items);
       if (status) {
-        status.textContent =
-          "已读取 json/browser_bookmark.json，共 " +
-          items.length +
-          " 条。同一份内容也在 images/browser_bookmark.json。";
+        status.textContent = "已读取 jsons/browser_bookmark.json，共 " + items.length + " 条。";
       }
     })
     .catch(function () {
       if (status) {
-        status.textContent = "当前显示页内写好的书签。JSON 文件放在 json/ 与 images/ 目录。";
+        status.textContent = "当前显示页内写好的书签。JSON 文件在 jsons/browser_bookmark.json。";
       }
     });
 
